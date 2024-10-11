@@ -2,14 +2,15 @@ package br.com.pizzaria.model;
 
 public class Pizzaria {
 
-    private String idPedido;
+    public int id;
 
-    public String getIdPedido() {
-        return idPedido;
+    public int getId(){
+        return id;
     }
 
-    public void setIdPedido(String idPedido) {
-        this.idPedido = idPedido;
+    public void setId(int id){
+        this.id = id;
     }
+
 
 }

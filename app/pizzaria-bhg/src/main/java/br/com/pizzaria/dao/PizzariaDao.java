@@ -8,9 +8,9 @@ import java.sql.PreparedStatement;
 
 public class PizzariaDao {
 
-    public void createPizza(Pizzaria pizzaria) {
+    public void createID (Pizzaria pizzaria){
 
-        String SQL = "INSERT INTO LOCALIZAR (ID) VALUES (?)";
+        String SQL = "INSERT INTO PEDIDO (ID) VALUES (?)";
 
         try {
 
@@ -20,10 +20,10 @@ public class PizzariaDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, pizzaria.getIdPedido());
+            preparedStatement.setInt(1, pizzaria.getId());
             preparedStatement.execute();
 
-            System.out.println("success in insert email");
+            System.out.println("success in insert car");
 
             connection.close();
 
@@ -34,5 +34,4 @@ public class PizzariaDao {
         }
 
     }
-    }
-
+}
