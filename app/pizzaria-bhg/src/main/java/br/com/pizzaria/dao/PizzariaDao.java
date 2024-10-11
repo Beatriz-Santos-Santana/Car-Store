@@ -10,7 +10,7 @@ public class PizzariaDao {
 
     public void createPizza(Pizzaria pizzaria) {
 
-        String SQL = "INSERT INTO LOGIN (EMAIL) VALUES (?)";
+        String SQL = "INSERT INTO LOCALIZAR (ID) VALUES (?)";
 
         try {
 
@@ -20,7 +20,7 @@ public class PizzariaDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, pizzaria.getEmail());
+            preparedStatement.setString(1, pizzaria.getIdPedido());
             preparedStatement.execute();
 
             System.out.println("success in insert email");

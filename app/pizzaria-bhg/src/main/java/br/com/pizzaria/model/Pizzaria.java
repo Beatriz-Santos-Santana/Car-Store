@@ -2,22 +2,14 @@ package br.com.pizzaria.model;
 
 public class Pizzaria {
 
-    private String email;
-    private String senha;
+    private String idPedido;
 
-    public String getEmail() {
-        return email;
+    public String getIdPedido() {
+        return idPedido;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setIdPedido(String idPedido) {
+        this.idPedido = idPedido;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 }

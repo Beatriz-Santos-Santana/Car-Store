@@ -7,15 +7,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/create-login")
+@WebServlet("/localizar-pedido")
 public class CreatePizzariaServlet  extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String pizzaEmail = request.getParameter("email");
+        String idPedido = request.getParameter("id");
 
-        System.out.println(pizzaEmail);
+        System.out.println(idPedido);
 
         request.getRequestDispatcher("index.html").forward(request, response);
 
